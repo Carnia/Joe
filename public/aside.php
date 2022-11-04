@@ -169,7 +169,7 @@
             </div>
         </section>
     <?php endif; ?>
-    <?php if ($this->options->JAside_3DTag === 'on') : ?>
+    <?php if ($this->options->JAside_3DTag !== 'off') : ?>
         <section class="joe_aside__item tags">
             <div class="joe_aside__item-title">
                 <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
@@ -181,12 +181,24 @@
             <?php $this->widget('Widget_Metas_Tag_Cloud', array('sort' => 'count', 'ignoreZeroCount' => true, 'desc' => true, 'limit' => 50))->to($tags); ?>
             <div class="joe_aside__item-contain">
                 <?php if ($tags->have()) : ?>
-                    <div class="tag"></div>
-                    <ul class="list" style="display: none;">
-                        <?php while ($tags->next()) : ?>
-                            <li data-url="<?php $tags->permalink(); ?>" data-label="<?php $tags->name(); ?>"></li>
-                        <?php endwhile; ?>
-                    </ul>
+                    <?php if ($this->options->JAside_Tag === '1') : ?>
+                        <div class="tag"></div>
+                        <ul class="list" style="display: none;">
+                            <?php while ($tags->next()) : ?>
+                                <li data-url="<?php $tags->permalink(); ?>" data-label="<?php $tags->name(); ?>"></li>
+                            <?php endwhile; ?>
+                        </ul>
+                    <?php endif; ?>
+                    <?php if ($this->options->JAside_Tag === '2') : ?>
+                        <div class="common-tags">
+                            <?php while ($tags->next()) : ?>
+                                <a class="common-tag" href="<?php $tags->permalink(); ?>"
+                                title="<?php $tags->name(); echo ' ('; $tags->count(); echo ')'; ?>">
+                                    <?php $tags->name(); ?>
+                                </a>
+                            <?php endwhile; ?>
+                        </div>
+                    <?php endif; ?>
                 <?php else : ?>
                     <div class="empty">暂无标签</div>
                 <?php endif; ?>
