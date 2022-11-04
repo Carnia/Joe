@@ -90,6 +90,9 @@ function _parseContent($post, $login)
     if (strpos($content, '{copy') !== false) {
         $content = preg_replace('/{copy([^}]*)\/}/SU', '<joe-copy $1></joe-copy>', $content);
     }
-
+    // 修复首行空格不显示的情况
+    $content = preg_replace_callback('/<p.*?>.*?<\/p>/S', static function ($match) {
+        return preg_replace('/\s{4}/', "&emsp;", $match[0]);
+    }, $content);
     echo $content;
 }
