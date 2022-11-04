@@ -5,6 +5,34 @@ function _getVersion()
 	return "7.3.7";
 };
 
+function autoCdnUrl($path) {
+    if (Helper::options()->JCDNUrl) {
+        $url = Helper::options()->JCDNUrl;
+        if (substr($url, strlen($url) - 1) != "/") {
+            $url = $url . '/';
+        }
+        if (substr($path, 0, 1) == "/") {
+            $path = substr($path, 1);
+        }
+        return  $url . $path;
+    } else {
+        Helper::options()->themeUrl($path);
+    }
+}
+function autoNpmCdnUrl($path) {
+    // if (Helper::options()->JCDNUrl) {
+    //     $url = Helper::options()->JCDNUrl;
+    //     if (substr($url, strlen($url) - 1) != "/") {
+    //         $url = $url . '/';
+    //     }
+    //     if (substr($path, 0, 1) == "/") {
+    //         $path = substr($path, 1);
+    //     }
+    //     return  $url . $path;
+    // } else {
+        Helper::options()->themeUrl('assets' . $path);
+    // }
+}
 /* 判断是否是手机 */
 function _isMobile()
 {
