@@ -1472,21 +1472,21 @@ if (post('action')) {
         <div id="pswp" class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
 
         <!-- Javascript -->
-        <script src="https://fastly.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/list.js@1.5.0/dist/list.min.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/yall-js@3.2.0/dist/yall.min.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/filesize@6.1.0/lib/filesize.min.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/screenfull@5.0.2/dist/screenfull.min.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/dayjs@1.8.34/dayjs.min.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/dayjs@1.8.34/plugin/localizedFormat.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/dayjs@1.8.34/plugin/relativeTime.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
+        <script src="<?php $echo autoNpmCdnUrl('animejs@3.2.0/lib/anime.min.js') ?>"></script>
+        <script src="<?php $echo autoNpmCdnUrl('list.js@1.5.0/dist/list.min.js') ?>"></script>
+        <script src="<?php $echo autoNpmCdnUrl('yall-js@3.2.0/dist/yall.min.js') ?>"></script>
+        <script src="<?php $echo autoNpmCdnUrl('filesize@6.1.0/lib/filesize.min.js') ?>"></script>
+        <script src="<?php $echo autoNpmCdnUrl('photoswipe@4.1.3/dist/photoswipe.js') ?>"></script>
+        <script src="<?php $echo autoNpmCdnUrl('screenfull@5.0.2/dist/screenfull.min.js') ?>"></script>
+        <script src="<?php $echo autoNpmCdnUrl('dayjs@1.8.34/dayjs.min.js') ?>"></script>
+        <script src="<?php $echo autoNpmCdnUrl('dayjs@1.8.34/plugin/localizedFormat.js') ?>"></script>
+        <script src="<?php $echo autoNpmCdnUrl('dayjs@1.8.34/plugin/relativeTime.js') ?>"></script>
+        <script src="<?php $echo autoNpmCdnUrl('bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js') ?>"></script>
         <script>
           var _c = <?php echo json_encode($json_config, JSON_PRETTY_PRINT); ?>;
           var CodeMirror = {};
         </script>
-        <script src="https://fastly.jsdelivr.net/npm/codemirror@5.57.0/mode/meta.js"></script>
+        <script src="<?php $echo autoNpmCdnUrl('codemirror@5.57.0/mode/meta.js') ?>"></script>
         <!-- custom -->
         <?php custom_script('js'); ?>
         <!-- files -->

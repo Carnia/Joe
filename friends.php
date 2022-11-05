@@ -19,8 +19,8 @@
     <?php else : ?>
         <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.min.css">
     <?php endif; ?>
-    <script src="https://fastly.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
-    <script src="https://fastly.jsdelivr.net/npm/typecho-joe-next@6.2.4/plugin/prism/prism.min.js"></script>
+    <script src="<?php $echo autoNpmCdnUrl('clipboard@2.0.6/dist/clipboard.min.js') ?>"></script>
+    <script src="<?php $echo autoNpmCdnUrl('typecho-joe-next@6.2.4/plugin/prism/prism.min.js') ?>"></script>
     <script src="<?php $this->options->themeUrl('assets/js/joe.post_page.min.js'); ?>"></script>
 </head>
 
