@@ -169,8 +169,8 @@ class Editor
     public static function Edit()
     {
 ?>
-        <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-        <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-one-light-dark@1.0.4/prism-onedark.min.css">
+        <link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('aplayer@1.10.1/dist/APlayer.min.css') ?>">
+        <link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('prism-theme-one-light-dark@1.0.4/prism-onedark.min.css') ?>">
         <link rel="stylesheet" href="<?php Helper::options()->themeUrl('typecho/write/css/joe.write.min.css') ?>">
         <script>
             window.JoeConfig = {

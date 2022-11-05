@@ -13,7 +13,7 @@
 
 <head>
 	<?php $this->need('public/include.php'); ?>
-	<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css" />
+	<link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('swiper@5.4.5/css/swiper.min.css') ?>" />
 	<script src="<?php $echo autoNpmCdnUrl('swiper@5.4.5/js/swiper.min.js') ?>"></script>
 	<script src="<?php $echo autoNpmCdnUrl('wowjs@1.1.3/dist/wow.min.js') ?>"></script>
 	<link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/joe.index.min.css'); ?>">

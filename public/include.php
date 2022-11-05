@@ -20,11 +20,11 @@
 <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/joe.normalize.min.css'); ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/joe.global.min.css'); ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/joe.responsive.min.css'); ?>">
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/typecho-joe-next@6.0.0/plugin/qmsg/qmsg.css">
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css" />
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('typecho-joe-next@6.0.0/plugin/qmsg/qmsg.css') ?>">
+<link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css') ?>" />
+<link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('animate.css@3.7.2/animate.min.css') ?>" />
+<link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('font-awesome@4.7.0/css/font-awesome.min.css') ?>">
+<link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('aplayer@1.10.1/dist/APlayer.min.css') ?>">
 <script src="<?php $echo autoNpmCdnUrl('jquery@3.5.1/dist/jquery.min.js') ?>"></script>
 <script src="<?php $echo autoNpmCdnUrl('typecho-joe-next@6.0.0/plugin/scroll/joe.scroll.js') ?>"></script>
 <script src="<?php $echo autoNpmCdnUrl('lazysizes@5.3.0/lazysizes.min.js') ?>"></script>

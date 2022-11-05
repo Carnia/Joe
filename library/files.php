@@ -1420,7 +1420,7 @@ if (post('action')) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="robots" content="noindex,nofollow">
         <title><?php echo $init_path ? basename($init_path) : '/'; ?></title>
-        <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+        <link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('photoswipe@4.1.3/dist/photoswipe.css') ?>">
         <link href="<?php echo config::$assets ?>css/files.css" rel="stylesheet">
         <?php custom_script('css'); ?>
       </head>
