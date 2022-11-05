@@ -30,7 +30,7 @@ function autoNpmCdnUrl($path) {
     //     }
     //     return  $url . $path;
     // } else {
-        Helper::options()->themeUrl('assets' . $path);
+        Helper::options()->themeUrl('assets/' . $path);
     // }
 }
 /* 判断是否是手机 */
