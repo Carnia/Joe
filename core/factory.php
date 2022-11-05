@@ -169,8 +169,8 @@ class Editor
     public static function Edit()
     {
 ?>
-        <link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('aplayer@1.10.1/dist/APlayer.min.css') ?>">
-        <link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('prism-theme-one-light-dark@1.0.4/prism-onedark.min.css') ?>">
+        <link rel="stylesheet" href="<?php echo autoNpmCdnUrl('aplayer@1.10.1/dist/APlayer.min.css') ?>">
+        <link rel="stylesheet" href="<?php echo autoNpmCdnUrl('prism-theme-one-light-dark@1.0.4/prism-onedark.min.css') ?>">
         <link rel="stylesheet" href="<?php Helper::options()->themeUrl('typecho/write/css/joe.write.min.css') ?>">
         <script>
             window.JoeConfig = {
@@ -184,8 +184,8 @@ class Editor
                 canPreview: false
             }
         </script>
-        <script src="<?php $echo autoNpmCdnUrl('aplayer@1.10.1/dist/APlayer.min.js') ?>"></script>
-        <script src="<?php $echo autoNpmCdnUrl('typecho-joe-next@6.2.4/plugin/prism/prism.min.js') ?>"></script>
+        <script src="<?php echo autoNpmCdnUrl('aplayer@1.10.1/dist/APlayer.min.js') ?>"></script>
+        <script src="<?php echo autoNpmCdnUrl('typecho-joe-next@6.2.4/plugin/prism/prism.min.js') ?>"></script>
         <script src="<?php Helper::options()->themeUrl('typecho/write/parse/parse.min.js') ?>"></script>
         <script src="<?php Helper::options()->themeUrl('typecho/write/dist/index.bundle.js') ?>"></script>
         <script src="<?php Helper::options()->themeUrl('assets/js/joe.short.min.js') ?>"></script>

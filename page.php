@@ -6,10 +6,10 @@
     <?php if ($this->options->JPrismTheme) : ?>
         <link rel="stylesheet" href="<?php $this->options->JPrismTheme() ?>">
     <?php else : ?>
-        <link rel="stylesheet" href="<?php $echo autoNpmCdnUrl('prismjs@1.23.0/themes/prism.min.css') ?>">
+        <link rel="stylesheet" href="<?php echo autoNpmCdnUrl('prismjs@1.23.0/themes/prism.min.css') ?>">
     <?php endif; ?>
-    <script src="<?php $echo autoNpmCdnUrl('clipboard@2.0.6/dist/clipboard.min.js') ?>"></script>
-    <script src="<?php $echo autoNpmCdnUrl('typecho-joe-next@6.2.4/plugin/prism/prism.min.js') ?>"></script>
+    <script src="<?php echo autoNpmCdnUrl('clipboard@2.0.6/dist/clipboard.min.js') ?>"></script>
+    <script src="<?php echo autoNpmCdnUrl('typecho-joe-next@6.2.4/plugin/prism/prism.min.js') ?>"></script>
     <script src="<?php $this->options->themeUrl('assets/js/joe.post_page.min.js'); ?>"></script>
 </head>
 

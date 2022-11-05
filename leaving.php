@@ -14,7 +14,7 @@
 
 <head>
     <?php $this->need('public/include.php'); ?>
-    <script src="<?php $echo autoNpmCdnUrl('draggabilly@2.3.0/dist/draggabilly.pkgd.js') ?>"></script>
+    <script src="<?php echo autoNpmCdnUrl('draggabilly@2.3.0/dist/draggabilly.pkgd.js') ?>"></script>
     <script src="<?php $this->options->themeUrl('assets/js/joe.leaving.min.js'); ?>"></script>
 </head>
 
