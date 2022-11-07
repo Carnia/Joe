@@ -298,7 +298,7 @@
         </div>
     </div>
 
-    <div class="joe_header__slideout">
+    <div class="joe_header__slideout" style="transform: translate3d(-100%, 0, 0);">
         <img width="100%" height="150" class="joe_header__slideout-image" src="<?php $this->options->JAside_Wap_Image() ?>" alt="侧边栏壁纸" />
         <div class="joe_header__slideout-author">
             <img width="50" height="50" class="avatar lazyload" src="<?php _getAvatarLazyload(); ?>" data-src="<?php $this->options->JAside_Author_Avatar ? $this->options->JAside_Author_Avatar() : _getAvatarByMail($this->authorId ? $this->author->mail : $this->user->mail) ?>" alt="博主昵称" />
