@@ -170,7 +170,7 @@ class Editor
     {
 ?>
         <link rel="stylesheet" href="<?php echo autoNpmCdnUrl('aplayer@1.10.1/dist/APlayer.min.css') ?>">
-        <link rel="stylesheet" href="<?php echo autoNpmCdnUrl('prism-theme-one-light-dark@1.0.4/prism-onedark.min.css') ?>">
+        <link rel="stylesheet" href="<?php echo autoNpmCdnUrl('prism-theme-one-light-dark@1.0.4/prism-onedark.css') ?>">
         <link rel="stylesheet" href="<?php Helper::options()->themeUrl('typecho/write/css/joe.write.min.css') ?>">
         <script>
             window.JoeConfig = {
